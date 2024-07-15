@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.heart1,.heart2,.heart3,.heart4,.heart5,.heart6{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-fill-mode: forwards;
+}
+
+.heart1{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart1.svg");
+    background-size: cover;
+    animation-name: heart1;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+}
+
+.heart2{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart2.svg");
+    background-size: cover;
+    animation-name: heart2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+}
+
+.heart3{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart3.svg");
+    background-size: cover;
+    animation-name: heart3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+}
+
+.heart4{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart4.svg");
+    background-size: cover;
+    animation-name: heart4;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+}
+
+.heart5{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart5.svg");
+    background-size: cover;
+    animation-name: heart5;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-timing-function: ease-in;
+}
+
+.heart6{
+    width: 0px;
+    height: 0px;
+    background-image: url("./resources/heart6.svg");
+    background-size: cover;
+    animation-name: heart6;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in;
+}
+
+.darkMode{
+    animation-name: darkTransition;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.frame{
+    background-image: url("./resources/frame.svg");
+    width: 400px;
+    aspect-ratio: 32/42;
+    background-size: contain;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(1000px);
+    animation-name: flow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    color: white;
+}
+
+.balloon1{
+    position: fixed;
+    top: 110%;
+    left: -10%;
+}
+
+.balloon3{
+    position: fixed;
+    top: 110%;
+    left: -10%;
+}
+
+.balloon2{
+    position: fixed;
+    top: 110%;
+    right: -10%;
+}
+
+.balloon4{
+    position: fixed;
+    top: 110%;
+    right: -10%;
+}
+
+.floatTop1{
+    animation-name: floatingBalloon;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.floatTop2{
+    animation-name: floatingBalloon;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.floatTop3{
+    animation-name: floatingBalloon;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.floatTop4{
+    animation-name: floatingBalloon;
+    animation-duration: 5s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.text{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    font-size: 16px;
+    font-family: "Playwrite DK Loopet", cursive;
+    font-weight: 400;
+    word-spacing: -2px;
+    line-height: 20px;
+}
+
+.audio{
+    visibility: hidden;
+}
+
+@keyframes floatingBalloon{
+    from{
+        top: 110%;
+    }
+    to{
+        top: -50%;
+    }
+}
+
+@keyframes flow {
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes darkTransition{
+    from{
+       background-color: white;
+    }
+    to{
+        background-color: #15172e;
+    }
+}
+
+@keyframes heart1{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart2{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart3{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart4{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart5{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
+@keyframes heart6{
+    from{
+        width: 0px;
+        height: 0px;
+    }
+    to{
+        width: 600px;
+        height: 600px;
+        opacity: 0;
+    }
+}
+
