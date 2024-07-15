@@ -1,7 +1,3 @@
-window.addEventListener("load", ()=>{
-    document.querySelector(".song").play();
-})
-
 let items = ["heart1", "heart2", "heart3", "heart4", "heart5", "heart6"];
 
 for(let i = 0; i<items.length; i++){
